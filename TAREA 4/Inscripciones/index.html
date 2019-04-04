@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <title>Inscripciones</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <form id="form" class="form">
+
+                    <div class="form-group">
+                        <label for="cuenta">Número de cuenta</label>
+                        <input required class="form-control" id="cuenta" type="number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input required class="form-control" id="nombre" type="text">
+                    </div>
+
+                    <button type="button" id="btnRegistrar" class="btn btn-danger">Registrar</button>
+
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <table class="table" id="info">
+                    <thead>
+                        <tr>
+                            <th>Cuenta</th>
+                            <th>Nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="main.js" type="module"></script>
+</html>

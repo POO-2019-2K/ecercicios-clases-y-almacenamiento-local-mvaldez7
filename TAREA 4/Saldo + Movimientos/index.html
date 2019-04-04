@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <title>Movimientos</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <form id="form" class="form">
+
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad</label>
+                        <input required class="form-control" id="cantidad" type="number">
+                    </div>
+
+                    <div class="row">
+                        <button type="button" id="btnRetiro" class="btn btn-primary col-6">RETIRAR</button>
+                        <button type="button" id="btnDeposito" class="btn btn-danger col-6">DEPÓSITAR</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-8">
+                <table class="table" id="info">
+                    <thead>
+                        <tr>
+                            <th>Movimiento</th>
+                            <th>Monto</th>
+                            <th>Saldo</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="main.js" type="module"></script>
+</html>
